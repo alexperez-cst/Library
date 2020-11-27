@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@500&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="index.js" async></script>
 	<title>Document</title>
 </head>
-<body>
 
+<body>
+	<div id='header'>
+		<div id='title'>Library Archiver</div>
+		<button id='button' class='buttonStyle'>New book 📚</button>
+	</div>
+	<div id='formBase'>
+		<div id='form'>
+			<form onsubmit="addBookToLibrary(); return false;">
+				<label for='bookName'>Book Name:</label>
+				<input name='bookName' id='bookName' type="text" placeholder="E.G: CODE: The Hidden Language..." required>
+				<label for='authorName'>Author Name:</label>
+				<input name='authorName' id='authorName' type="text" placeholder="E.G: Charles Petzold" required>
+				<label for='pagesNum'>Book Name:</label>
+				<input name='pagesNum' type="number" id='pagesNum' placeholder="E.G: 342" required>
+				<label for='readed'>You readed the book?
+					<input name='readed' type="radio" value=true checked> Yes
+					<input name='readed' type='radio' value=false> No
+				</label>
+				<input type="submit" id='submitForm' value="Submit">
+			</form>
+		</div>
+	</div>
+	<div id='library'></div>
 </body>
+
 </html>
