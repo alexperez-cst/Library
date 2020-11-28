@@ -1,2 +1,3 @@
 # Library
-Library of a project of The Odin Project
+Library of an exercise of The Odin Project.
+
